@@ -3,14 +3,12 @@
  * action creator
  */
 export function onIncrement() {
-    console.log('add')
     return {
         type: 'INCREMENT'
     }
 }
 
 export function onDecrement() {
-    console.log('del')
     return {
         type: 'DECREMENT'
     }
