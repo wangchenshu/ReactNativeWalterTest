@@ -40,13 +40,13 @@ Counter.propTypes = {
 	onDecrement: PropTypes.func.isRequired
 }
 
-const mapStatetoProps = (state) => {
+const mapStateToProps = (state) => {
 	return {
 		value: state
 	}
 }
 
-const mapDispatchtoProps = {onIncrement, onDecrement}
+const mapDispatchToProps = {onIncrement, onDecrement}
 
-Counter = connect(mapStatetoProps, mapDispatchtoProps)(Counter)
+Counter = connect(mapStateToProps, mapDispatchToProps)(Counter)
 export default Counter
