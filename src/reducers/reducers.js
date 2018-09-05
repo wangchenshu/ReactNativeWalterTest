@@ -1,4 +1,7 @@
 
+/*
+ * action creator
+ */
 export function onIncrement() {
     console.log('add')
     return {
@@ -13,6 +16,9 @@ export function onDecrement() {
     }
 }
 
+/*
+ * reducer
+ */
 export default counter = (state = 0, action) => {
     switch(action.type) {
         case 'INCREMENT':
