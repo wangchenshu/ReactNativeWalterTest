@@ -1,16 +1,20 @@
 
+const INCREMENT = 'INCREMENT'
+const DECREMENT = 'DECREMENT'
+const initialState = 10
+
 /*
  * action creator
  */
 export function onIncrement() {
   return {
-    type: 'INCREMENT'
+    type: INCREMENT
   }
 }
 
 export function onDecrement() {
   return {
-    type: 'DECREMENT'
+    type: DECREMENT
   }
 }
 
@@ -19,11 +23,11 @@ export function onDecrement() {
  */
 export default counter = (state = 0, action) => {
   switch(action.type) {
-    case 'INCREMENT':
+    case INCREMENT:
       return state + 1
-    case 'DECREMENT':
+    case DECREMENT:
       return state - 1
     default:
-      return 10
+      return initialState
   }
 }
